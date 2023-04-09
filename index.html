@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>
+            IMDI cloner 
+        </title>
+
+        <!-- font design from google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+        
+        <!-- font awesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <!-- FontAwesome -->
+        <script
+         src="https://kit.fontawesome.com/a8162db7fd.js"
+          crossorigin="anonymous"
+         ></script>
+        <link rel="stylesheet" href="main.css">
+
+   </head>
+    <body>
+        <nav class="navbar bg-dark px-2 sticky-top">
+            <div class="container-fluid justify-content-start">
+              <a class="navbar-brand" href="index.html">
+                <span class="pt-4 site-name">
+                  IMDB cloner 
+                </span>
+              </a>
+      
+              <!-- Search Bar-->
+              <div id="search-bar" class="mx-auto">
+                <form action="" autocomplete="off">
+                  <input
+                    type="search"
+                    placeholder="Search "
+                    id="search"
+                    autocomplete="off" 
+                  /> 
+      
+                  <button id="search-btn"> 
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                  </button>
+                </form>
+              </div>
+      
+              <div id="show-favourites"><i class="fa-solid fa-bars"></i></div>
+            </div>
+          </nav>
+      
+          <div id="super-container" class="d-flex justify-content-between">
+            <!-- MAIN  SECTION-->
+            <main id="main-section">
+              <!-- Suggestions container-->
+              <div id="Suggestions-container" class="d-flex">
+                <p id="empty-search-text" class=" fs-1 pt-5 ">
+                  ALL THE MOVIES AROUND STORE IN THIS SMALL BOX, SO WHAT ARE YOU WAITING FOR, search here!!
+                </p>
+      
+                <div id="card-container">
+                </div>
+              </div>
+            </main>
+      
+            <!-- FAVORITES SECTION -->
+            <section id="favorites-section">
+              <h2>Favorites:</h2>
+      
+              <div id="empty-fav-text">
+                <p class="fs-5 mx-3  center">
+                  MINE <i class="fa-heart fa-solid text-muted"></i>  (All MY FAVORUITES ARE HERE AND WHAT ARE YOURS??)
+                </p>
+              </div>
+      
+              <div id="fav-movies-container" class=".flex-column mx-auto">
+              
+              </div>
+            </section>
+          </div>
+      
+          <script src="script.js"></script>
+        </body>
+      </html>
+    </body>
+   </html>
